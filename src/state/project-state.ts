@@ -1,4 +1,4 @@
-import { Project, ProjectStatus } from '../models/project-model';
+import { Project, ProjectStatus } from "../models/project-model";
 
 // Project State Management
 type Listener<T> = (items: T[]) => void;
@@ -27,12 +27,18 @@ export class ProjectState extends State<Project> {
     return this.instance;
   }
 
-  addProject(title: string, description: string, numOfPeople: number) {
+  addProject(
+    title: string,
+    description: string,
+    numOfPeople: number,
+    comment: string
+  ) {
     const newProject = new Project(
       Math.random().toString(),
       title,
       description,
       numOfPeople,
+      comment,
       ProjectStatus.Active
     );
     this.projects.push(newProject);
