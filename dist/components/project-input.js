@@ -68,6 +68,7 @@ export class ProjectInput extends Component {
         const userInput = this.gatherUserInput();
         if (Array.isArray(userInput)) {
             const [title, desc, people, comment] = userInput;
+            localStorage.setItem(title, JSON.stringify({ title, desc, people, comment }));
             projectState.addProject(title, desc, people, comment);
             this.clearInputs();
         }

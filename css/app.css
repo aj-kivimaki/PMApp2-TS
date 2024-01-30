@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -15,6 +15,7 @@ input,
 textarea {
   display: block;
   margin: 0.5rem 0;
+  border-radius: 3px;
 }
 
 label {
@@ -38,11 +39,12 @@ textarea:focus {
 
 button {
   font: inherit;
-  background: #ff0062;
-  border: 1px solid #ff0062;
+  background: #56102b;
+  border: 1px solid #56102b;
   cursor: pointer;
   color: white;
   padding: 0.75rem 1rem;
+  border-radius: 5px;
 }
 
 button:focus {
@@ -57,11 +59,11 @@ button:active {
 
 .projects {
   margin: 1rem;
-  border: 1px solid #ff0062;
+  border: 1px solid #56102b;
 }
 
 .projects header {
-  background: #ff0062;
+  background: #56102b;
   height: 3.5rem;
   display: flex;
   justify-content: center;
@@ -69,11 +71,11 @@ button:active {
 }
 
 #finished-projects {
-  border-color: #0044ff;
+  border-color: #131928;
 }
 
 #finished-projects header {
-  background: #0044ff;
+  background: #131928;
 }
 
 .projects h2 {
@@ -88,19 +90,19 @@ button:active {
 }
 
 .projects li {
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 1px 1px 8px rgba(86, 16, 43, 0.26);
   padding: 1rem;
   margin: 1rem;
   background: white;
 }
 
 .projects li h2 {
-  color: #ff0062;
+  color: rgb(86, 16, 43);
   margin: 0.5rem 0;
 }
 
 #finished-projects li h2 {
-  color: #0044ff;
+  color: #131928;
 }
 
 .projects li h3 {
@@ -123,6 +125,6 @@ button:active {
 #user-input {
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid #ff0062;
-  background: #f7f7f7;
+  border: 1px solid #56102b;
+  background: #f9e6e6;
 }
